@@ -1,0 +1,63 @@
+*{
+    margin: 0; /*Esse comando tira todas as margens assim eu vou poder da um ajuste mais refinado */  
+   }
+   
+   body{
+       background-color: black;
+       color: antiquewhite;
+       text-align: center;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   
+   #conteiner{
+     width: 80%; /* % é uma largura flexivel*/
+     max-width: 400px; /*Significa, caso o tamanho da tela for grande ele só vai até 400px*/
+     margin-top: 100px;
+     margin-inline: auto; /*calcula o left e o right de forma automatica*/              
+   }
+   
+   h1{
+       margin-top: 40px;
+       margin-bottom:10px ;
+       opacity: 0.9; /* Ele pode mudar a cor  da palavra de 0(preto absoluto) a 1(Que é 100% da cor)*/ 
+   }
+   
+   p{
+       margin-bottom: 40px;
+       opacity: 0.7;
+   }
+   input,button{ /*Eles estão um do lado pq as funcionalidades de um vai servi para o outro*/
+       display: block; /*serve para colocar uma função embaixo da outra*/
+       width: 100%; /*100% da largura máxima 400%*/
+       padding: 20px;
+       border-radius: 10px;
+   }
+   input{
+       margin-bottom: 20px;
+       font-family: 'Courier New', Courier, monospace;
+       font-size: 15px;
+   }
+   button{
+       margin-left: 20px;
+       color: white;
+       background-color: rgb(106, 17, 189);
+       font-size: 20px;
+       transition: filter .2s ; /* A transição do "filter" dura apenas alguns segundos */
+   }
+   /* pseudo-class : Hove{passar o mouse em cima do button}*/
+   button:hover{
+       filter: brightness(1.2);/* isso faz a cor do button pisca */
+       cursor: pointer; /* muda a seta do mouse*/
+   }
+   
+   #resposta{
+    margin-top: 30px;
+    transition: opacity 1s;
+   }
+
+   #resposta div{
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.9 ;
+    margin-bottom: 10px;
+   }
